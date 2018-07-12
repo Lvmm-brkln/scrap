@@ -39,15 +39,15 @@ end
 puts get_all_the_urls_of_val_doise_townhalls(url2)
 
 
-# # LES ADRESSES MAIL DES MAIRIES DU 95
-# def email_valdoise(arg3)
-# 	url_valdoise = get_all_the_urls_of_val_doise_townhalls(arg3)
-#
-# 	url_valdoise.each do |l|
-# 		if get_the_email_of_a_townhall_from_its_webpage(l).empty? == false
-# 		puts finish = get_the_email_of_a_townhall_from_its_webpage(l)
-# 		end
-# 	end
-# end
-#
-# email_valdoise('http://annuaire-des-mairies.com/val-d-oise.html')
+# LES ADRESSES MAIL DES MAIRIES DU 95
+def email_valdoise(arg3)
+	url_valdoise = get_all_the_urls_of_val_doise_townhalls(arg3)
+
+	url_valdoise.each do |l|
+		if get_the_email_of_a_townhall_from_its_webpage(l).empty? == false
+		puts finish = get_the_email_of_a_townhall_from_its_webpage(l)
+		end
+	end
+end
+
+email_valdoise('http://annuaire-des-mairies.com/val-d-oise.html')
